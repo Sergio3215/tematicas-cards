@@ -7,7 +7,7 @@ import fondoRosaPaper from "../../public/img/Fondo Rosa Paper.jpg"
 import HijoMadre from "../../public/img/Hijo con su madre.jpg"
 import { useEffect, useState } from "react";
 
-
+//@ts-ignore
 export default function Card() {
 
   const [bck, setBck] = useState('');
@@ -26,6 +26,7 @@ export default function Card() {
   const category = sp.get("category");
   const message = sp.get("message");
 
+  //@ts-ignore
   const selectImage = () => {
     let imgBck = '';
     let sttg = settingColor;
@@ -91,10 +92,12 @@ export default function Card() {
                     message == "" ?
                       '62px'
                       :
+                      //@ts-ignore
                       message.length > 20 ?
                         theme !== "3" ?
                           '36px'
                           :
+                          //@ts-ignore
                           message.length > 30 ?
                             "40px"
                             :
@@ -116,6 +119,7 @@ export default function Card() {
                       <h2 style={{
 
                         fontSize:
+                          //@ts-ignore
                           message.length > 20 ?
                             '20px' :
                             '35px'
