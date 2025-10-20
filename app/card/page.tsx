@@ -91,12 +91,12 @@ export default function Card() {
                     message == "" ?
                       '62px'
                       :
-                      //@ts-expect-error
+                      //@ts-expect-error("It is not a issue")
                       message.length > 20 ?
                         theme !== "3" ?
                           '36px'
                           :
-                          //@ts-expect-error
+                          //@ts-expect-error("It is not a issue")
                           message.length > 30 ?
                             "40px"
                             :
@@ -118,7 +118,7 @@ export default function Card() {
                       <h2 style={{
 
                         fontSize:
-                          //@ts-expect-error
+                          //@ts-expect-error("It is not a issue")
                           message.length > 20 ?
                             '20px' :
                             '35px'
