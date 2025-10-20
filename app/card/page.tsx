@@ -28,7 +28,7 @@ export default function Card() {
 
   const selectImage = () => {
     let imgBck = '';
-    let sttg = settingColor;
+    const sttg = settingColor;
     switch (theme) {
       case "1":
         imgBck = fondoRosa.src;
